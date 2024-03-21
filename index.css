@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h1, title {
+    color: white;
+}
+
+.painting {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    position: relative;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: #15447e;
+    position: relative;
+}
+
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+
+.circle:nth-child(1) {
+    top: 50%;
+    right: 30%;
+    transform: translate(-50%, -50%);
+    background-color: #FF5733;
+}
+
+.circle:nth-child(2) {
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    background-color: violet;
+}
+
+.circle:nth-child(3) {
+    bottom: 10px;
+    right: 10px;
+    background-color: green;
+}
+
+.flex-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    max-width: 400px;
+    padding: 30px;
+}
+
+label, input[type="text"], input[type="email"], input[type="submit"] {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="submit"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* media for different sizes */
+
+/* Desktop */
+@media (min-width: 1680px) {
+    .container {
+        width: 70%;
+    }
+}
+
+/* iPad */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+    }
+}
+
+/* media for different sizes */
+
+/* Desktop */
+@media (min-width: 1680px) {
+    .container {
+        width: 70%;
+    }
+}
+
+/* iPad */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+    }
+}
